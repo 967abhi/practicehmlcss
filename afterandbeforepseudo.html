@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Before and after pseudo selector </title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white ;
+            
+        }
+        header::before{
+            background-image: url('https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+            background-repeat: no-repeat;
+            background-position: center;
+            background: cover;
+            width: 100%;
+            height: 100vh;
+            /* counter-increment: ; */
+            content: " ";
+          position: absolute;
+          top: 0;
+          left: 0 ;
+          z-index: -1;
+          opacity: 0.5;
+
+
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 0px 23px ;
+        }
+        section{
+            height: 280px;
+            font-family: cursive;
+            margin: 3px 130px ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+        }
+        /* section::before{
+            content:"this is the content"
+        } */
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1>pseudo selector after and before </h1> -->
+    <header>
+        <nav class="navbar">
+            <ul class=" navigation ">
+                <li class="item " > Home </li>
+                <li class="item ">About Us </li>
+                <li class="item ">Services</li>
+                <li class="item "> Contact Us </li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3> welcome to coding world </h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam maxime nihil odit quas unde totam sit similique, reiciendis cum fugiat nisi praesentium suscipit ea possimus sapiente minima consectetur ratione quis dolorem eius modi.</p>
+            
+        </section>
+        <!-- <hr> -->
+</body>
+</html>

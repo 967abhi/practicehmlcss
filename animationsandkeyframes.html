@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and animation </title>
+    <style>
+        .container{
+            /* display: flex; */
+            background-color: greenyellow;
+        }
+        .box{
+            height: 250px;
+            width: 250px;
+            background-color: green;
+            position: relative;
+             animation-name: abhishek1;
+             animation-duration: 2s;
+             animation-iteration-count: 1;
+             animation-fill-mode: alternate;
+        }
+        @keyframes abhishek1 {
+            from{
+               width: 200px ;
+            }
+            to{
+             width:440px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box 
+        </div>
+    </div>
+    
+</body>
+</html>
